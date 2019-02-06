@@ -1,9 +1,3 @@
-DG = {}
-Tunnel.bindInterface("vRP_safezone",DG)
-Proxy.addInterface("vRP_safezone",DG)
-vRP = Proxy.getInterface("vRP")
-DGserver = Tunnel.getInterface("vRP_safezone","vRP_safezone")
-
 inSafeZone = false
 safeZone = nil
 
@@ -62,7 +56,7 @@ Citizen.CreateThread(function()
 			DisableControlAction(0,141,true)
 			DisableControlAction(0,142,true)
 			DisableControlAction(0,143,true)
-			vehPrs_drawTxt("Esti in ~g~SAFEZONE")
+			vehPrs_drawTxt("You are now in a ~g~safezone")
 		end
 	end
 end)
