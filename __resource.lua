@@ -1,8 +1,7 @@
-description "vRP_safezone"
-dependency "vrp"
+description "safezone"
 
 client_scripts {
-	"lib/Proxy.lua",
-	"lib/Tunnel.lua",
-	"client.lua"
+  "lib/Proxy.lua",
+  "lib/Tunnel.lua",
+  "client.lua"
 }
